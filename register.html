@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Booking Platform</title>
+    <title>Online Booking Platfrom</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-form">
+    <div class="register-form">
         <form method="post">
-            <h1 style="color: blue;">Login</h1>
+            <h1 style="color: rgb(124, 4, 128);">Register</h1>
+            <div class="input-box"> 
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
             <div class="input-box"> 
                 <input type="Email" name="login-email" id="Email" placeholder="Email" required>
                 <i class="bx bxs-user"></i>
@@ -18,13 +22,13 @@
                 <input type="Password" name="Password" placeholder="Password" id="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <div class="remenber-forgot">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot Password</a>
+            <div class="input-box">
+                <input type="Password" name="Password" placeholder="Retype Password" id="password" required>
+                <i class="bx bxs-lock-alt"></i>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Register</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p>Back to login? <a href="index.html">Login</a></p>
             </div>
         </form>
     </div>
