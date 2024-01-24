@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+body .login{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -60,15 +60,19 @@ body{
 .login-form{
   width: 420px;
   background: transparent;
+  background-color: #697ea7;
   border: 2px solid rgba(255,255,255, .2);
-  backdrop-filter: blur(0.1px);
-  border-radius: 12px;
+  border-radius: 213px;
   padding: 30px 40px;
+  opacity: 0.9;
+  margin-left: 3%;
 }
 
 .login-form h1{
   font-size: 36px;
   text-align: center;
+  font-weight: bold;
+  
 }
 
 .login-form .input-box{
