@@ -8,27 +8,31 @@
 </head>
 <body class="register">
     <div class="register-form" >
-        <form method="post" action="">
+        <form method="post" action="register.php">
             <h1 style="color: rgb(53 105 179);">Register</h1>
             <div class="input-box"> 
                 <input type="text" name="username" id="username" placeholder="Username" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box"> 
-                <input type="Email" name="login-email" id="Email" placeholder="Email" required>
+                <input type="Email" name="email" id="email" placeholder="Email" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="Password" name="Password" placeholder="Password" id="password" required>
+                <input type="Password" name="password" placeholder="Password" id="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="input-box">
-                <input type="Password" name="Password" placeholder="Retype Password" id="password" required>
+                <input type="Password" name="re_password" placeholder="Retype Password" id="re_password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="number" name="mobile" placeholder="Mobile" id="mobile" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <button type="submit" class="btn">Register</button>
             <div class="register-link">
-                <p>Back to login? <a href="login.html">Login</a></p>
+                <p>Back to Home? <a href="index.html">Login</a></p>
             </div>
         </form>
     </div>

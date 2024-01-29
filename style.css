@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body .login{
+body{
   display: flex;
   justify-content: flex-start;
   align-items: center;

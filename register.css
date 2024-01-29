@@ -45,6 +45,8 @@
   
   .input-box input[type="email"]::placeholder,
   .input-box input[type="text"]::placeholder,
+  .input-box input[type="number"]::placeholder,
+  .input-box input[type="text"]::placeholder,
   .input-box input[type="password"]::placeholder{
     color:rgb(205 67 17);
   }
