@@ -18,7 +18,7 @@ if($user){
         session_start();
 
         $_SESSION["email"] = $_user["email"];
-        header("Location:home.html");
+        header("Location:index.html");
         exit;
     }
 }

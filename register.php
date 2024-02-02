@@ -24,12 +24,11 @@ if ( ! preg_match("/[0-9]/", $_POST["password"])) {
 //     die("Passwords must match");
 // }
 if (empty($_POST["mobile"])) {
-    die("Name is required");
+    die("Number is required");
 }
 
 $currentDate = date("Y-m-d H:i:s");
 
-echo $currentDate;
 
 $mysqli = require __DIR__ . "/db.php";
 
