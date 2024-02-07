@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Booking Platform</title>
     <link rel="stylesheet" href="index.css" type="text/css">
+
 </head>
 <body>
     <nav>
@@ -23,20 +24,21 @@
         </div>
       </nav>
     <div class="interface">
-        <form action="" method="POST">
+        <form action="fetch.php" method="POST">
             <h1>Trains</h1>
             <div class="input-box"> 
-                <input type="text" name="start-station" id="start-station" placeholder="From" required>
+                <input type="text" name="start_station" id="start_station" value="start_station" placeholder="From" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box"> 
-                <input type="text" name="dest-station" id="dest-station" placeholder="To" required>
+                <input type="text" name="dest-station" id="dest_station" placeholder="To" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box"> 
                 <input type="date" name="date" id="Email" placeholder="Date Of Journey" required>
                 <i class="bx bxs-user"></i>
             </div>
+            <button type="submit" value="submit">Search</button>
         </form>
     </div>
 </body>
