@@ -13,20 +13,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if there are any trains found
     if ($result && $result->num_rows > 0) {
-        echo "<h2>Trains from $startStation:</h2>";
-        // Loop through each row of the result set and print train details
+        $trainsData = array();
+
+        // Fetch each row from the result set and add it to $trainsData array
         while ($row = $result->fetch_assoc()) {
-            echo "<p>Train No: " . $row["TrainNo"] . "</p>";
-            echo "<p>Train Name: " . $row["TrainName"] . "</p>";
-            echo "<p>From Station: " . $row["FromStation"] . "</p>";
-            echo "<p>To Station: " . $row["ToStation"] . "</p>";
-            echo "<p>Running Days: " . $row["RunningDays"] . "</p>";
-            echo "<p>Classes: " . $row["Classes"] . "</p>";
-            echo "<p>Source Time: " . $row["SourceTime"] . "</p>";
-            echo "<p>Destination Time: " . $row["DestinationTime"] . "</p>";
-            echo "<p>Train Type: " . $row["TrainType"] . "</p>";
-            echo "<p>Duration: " . $row["Duration"] . "</p><br>";
+            $trainsData[] = array(
+                "trainName" => $row["TrainName"],
+                "runningDays" => $row["RunningDays"],
+                "startTime" => $row["SourceTime"],
+                "destinationTime" => $row["DestinationTime"],
+                "categories" => array(
+                    array("name" => "AC3", "seatsAvailable" => 50),
+                    array("name" => "AC2", "seatsAvailable" => 30),
+                    array("name" => "AC1", "seatsAvailable" => 20)
+                    // Add more categories as needed
+                )
+            );
         }
+
+        // Pass $trainsData to the HTML page using session variable
+        $_SESSION["trainsData"] = $trainsData;
+
+        // Redirect to train_result.html
+        header("Location: train_results.html");
+        exit();
     } else {
         echo "No trains found for the given start station.";
     }

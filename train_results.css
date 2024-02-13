@@ -86,44 +86,87 @@ nav > .modify_search_bar{
 .modify_search_bar form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 10em;
     background-color: #a855f7;
-    
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.input_station{
+    margin-right: 10px;
+    display: inline;
+    margin: 3em;
+}
+
+.modify_search_bar input,
+.modify_search_bar button{
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.modify_search_bar input[type="text"],
+.modify_search_bar input[type="date"]{
+    background-color: bisque;
+    color: red;
+    margin-right: 10px;
 }
 .modify_search_bar .from_TO_Station{
     margin-top: 10em;
 }
 
-.modify_search_bar input{
-    display: absolute;
-    align-items: center;
-    background-color: bisque;
-    color: red;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    font-size: 15px;
-}
-
-input[type="text"]::placeholder{
-    color: rgb(212, 18, 34);
-}
-
 .modify_search_bar button{
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
     background-color: orange;
     color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
     font-weight: 700;
 }
 
 .modify_search_bar button:hover{
     cursor: pointer;
+}
+
+/* Style for train boxes */
+.train-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Style for train name */
+.train-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 5px;
+}
+
+/* Style for train information */
+.train-info {
+    color: #666; /* Medium gray text color */
+    margin-bottom: 10px;
+}
+
+/* Style for running days */
+.running-days {
+    color: #777; /* Light gray text color */
+}
+
+/* Style for train categories */
+.train-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for individual category */
+.train-category {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0; /* Lighter gray background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #444; /* Dark gray text color */
 }
