@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Pass $trainsData to the HTML page using session variable
         $_SESSION["trainsData"] = $trainsData;
 
-        // Redirect to train_result.html
+        // Redirect to train_results.html
         header("Location: train_results.html");
         exit();
     } else {
