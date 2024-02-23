@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["trainsData"] = $trainsData;
 
         // Redirect to train_results.html
-        header("Location: train_results.html");
+        header("Location: train_results.php");
         exit();
     } else {
         echo "No trains found for the given start station.";

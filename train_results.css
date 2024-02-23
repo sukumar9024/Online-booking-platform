@@ -4,7 +4,7 @@
     --secondary-color: #ca8104;
     --max-width: 1200px;
 }
-  
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ nav {
     background-color: #ffffff;
     z-index: 99;
 }
-  
+
 .nav__content {
     max-width: var(--max-width);
     margin: auto;
@@ -29,7 +29,7 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-  
+
 nav .logo a {
     font-size: 1.5rem;
     font-weight: 600;
@@ -37,23 +37,25 @@ nav .logo a {
     transition: 0.3s;
     text-decoration: none;
 }
-  
+
 nav .logo a:hover {
     color: var(--primary-color-dark);
 }
-  
+
 nav .checkbox {
     display: none;
 }
-  
+ 
 nav input {
     display: none;
 }
+
 nav .checkbox i {
     font-size: 2rem;
     color: var(--primary-color);
     cursor: pointer;
 }
+
 ul {
     display: flex;
     align-items: center;
@@ -61,7 +63,7 @@ ul {
     list-style: none;
     transition: left 0.3s;
 }
-  
+
 ul li a {
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
@@ -70,7 +72,7 @@ ul li a {
     color: var(--text-dark);
     transition: 0.3s;
 }
-  
+
 ul li a:hover {
     border-top-color: var(--secondary-color);
     border-bottom-color: var(--secondary-color);
@@ -87,9 +89,8 @@ nav > .modify_search_bar{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 5em;
     background-color: #a855f7;
-    padding: 20px;
     border-radius: 50px;
 }
 
@@ -113,6 +114,7 @@ nav > .modify_search_bar{
     color: red;
     margin-right: 10px;
 }
+
 .modify_search_bar .from_TO_Station{
     margin-top: 10em;
 }
